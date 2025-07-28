@@ -55,7 +55,7 @@ a) 1 1 R R R R
 1 1 R R
 1 1 R R */
 
-class Rpatterns{
+class patterns1{
 	public static void main(String[] args){
 		int rows =5;
 		for(int i=0;i<rows;i++){
@@ -70,6 +70,29 @@ class Rpatterns{
 		}
 	}
 }
+*b) R R R R
+  R     R
+  R R R R
+  R    R
+  R     R */
+class Rpatern{
+	public static void main(String[] args){
+		int rows = 5;
+		int col = 4;
+		for(int i=1;i <= rows;i++){
+			for(int j=1;j <= col;j++){
+				if(i == 1 || i == 3){
+					System.out.print("R ");
+		        }else if(j==1 || (i == 2 && j == col) || (i == 4 && j == 3)  || (i == 5 && j == 4)){
+					System.out.print("R ");
+				}else{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+ }
 
 
 /*3. Write a program to do the following patterns using while loop?
