@@ -49,11 +49,12 @@ class Patterns{
 	}
 }
 /*2. Write a program to do the following patterns using for loop?
-a) 1 1 R R R R
-1 1 R R
-1 R R R R
-1 1 R R
-1 1 R R */
+//a) Using for loop patterns
+  /*1      1
+    1     1
+      1
+   1    1
+  1       1 */ 
 
 class patterns1{
 	public static void main(String[] args){
@@ -87,7 +88,7 @@ class Rpatern{
 					System.out.print("R ");
 				}else{
 					System.out.print("  ");
-				}
+	 			}
 			}
 			System.out.println();
 		}
@@ -95,69 +96,7 @@ class Rpatern{
  }
 
 
-/*3. Write a program to do the following patterns using while loop?
-a) 1 b) w
-2 3 w w
-4 5 6 w w w
-7 8 w w
-9 w*/
-//a)
-   /*  1
-   2   3
- 4    5   6
-   7   8
-     9*/
-	 
- class pattern{
-	 public static void main(String[] args){
-		 int rows = 3;
-		 int num=1;
-		 int i=1;
-		 while(i<=2*rows-1){
-			int totoalcols = (i<=rows) ? i : (2*rows-i);
-		    int j =1;
-		      while(j<=rows)
-			 {
-				 if( j <= rows-totoalcols ) {
-					 System.out.print(" ");
-				 }else{
-					 System.out.print(num+" ");
-					  num++;
-				 }
-				 j++;
-				
-			 }
-			 System.out.println();
-			 i++;
-		 }
-	 }
- }
 
-//b.	 
-class patternS{
-	 public static void main(String[] args)
-	 {
-		 int r = 3;
-		 int num=1;
-		 int i=1;
-		 while(i<=2*r-1){
-			int totoalcols = (i<=r) ? i : (2*r-i);
-		    int j =1;
-		  while(j<=r){
-				 if( j <= r-totoalcols ){
-					 System.out.print(" ");
-				 }else{
-					 System.out.print("W"+" ");
-					  num++;
-				 }
-				 j++;
-				
-			 }
-			 System.out.println();
-			 i++;
-		 }
-	 }      
- }
  /*3. Write a program to do the following patterns using while loop? a)  ;
     1
   2   3 
@@ -238,6 +177,40 @@ class Right{
 
 /*4. Write a program to do the following patterns using do...while loop?
 a) Pascal Triangle
+class pascal{
+	public static void main(String[]  args)
+	{
+		int n =4;
+		int i=0;
+		
+		do {
+			int space =0;
+			do{
+				System.out.print(" "); // space 
+				space++;
+			}while(space< n -i);
+			int j=0;
+			int value=1;
+			do{
+				if(j == 0 || i == 0)
+				{
+					value =1;
+				}
+				else{
+					value = value * (i - j + 1 )/j;
+				}
+				System.out.print(value+ " ");
+				j++;
+			}
+			while(j <= i );
+			System.out.println();
+			i++;
+		}
+		while(i < n);
+	}
+ }
+
+
 b) ZOHO
 CORP
 ORAT
@@ -1126,6 +1099,7 @@ class Capital{
 		System.out.println(isCapital(word2));
 	}
 }
+
 
 
 
