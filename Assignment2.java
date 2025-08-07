@@ -30,24 +30,25 @@ Percent>=70 Grade ‘B’
 Percent>=50 Grade ‘C’
 otherwise print ”Fail*/
 
-// 1. Write a program that uses if statement to find the minimum of three numbers.
-class Patterns{
+class minimum{
 	public static void main(String[] args)
 	{
-		int rows =5;
-		for(int i=0;i<rows;i++){
-			for(int j =0;j<rows;j++){
-				
-				if(i == j || i+j == rows - 1 ){
-					System.out.print("1"+ " " );
-				}else{
-					System.out.print(" ");
-				}
-			}
-			System.out.println();
+		int n1 = 45;
+		int n2 = 32;
+		int n3 = 55;
+		if(n1 < n2 & n1 < n3)
+		{
+			System.out.println( "minimum of three number" + n1);
+		}
+		else if(n2 < n3)
+		{
+			System.out.println("minimum of three number " + n2);
+		}
+		else{
+			System.out.println("minimum of three number " + n3);
 		}
 	}
-}
+}  
 /*2. Write a program to do the following patterns using for loop?
 //a) Using for loop patterns
   /*1      1
@@ -1099,6 +1100,7 @@ class Capital{
 		System.out.println(isCapital(word2));
 	}
 }
+
 
 
 
